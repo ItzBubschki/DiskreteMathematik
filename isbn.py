@@ -19,10 +19,10 @@ def solve_missing(number, checksum):
             missing = i
     return int((checksum - sum%11)/(missing+1))
 
-if int(input("Which one? ")) == 1:
+if int(input("Isbn with one missing value (0) or a regular isbn without the checksum (1)? ")) == 1:
     num = input("Enter isbn: ")
-    print(calculate(num))
+    print(f"The checksum is: {calculate(num)}")
 else:
     num = input("Enter isbn with x: ")
     checksum = input("Enter checksum: ")
-    print(solve_missing(num, checksum))
+    print(f"The missing number is: {solve_missing(num, checksum)}")

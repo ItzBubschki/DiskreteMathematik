@@ -54,7 +54,7 @@ if gcd(base, modulo) == 1:
     print(result_text)
     print(f"Result for {base}^{exponent}%{modulo} = {new_base}^{new_exponent}%{modulo} = {(new_base**new_exponent)%modulo}")
 else:
-    print("The gcd is greater then 1, so the euler way doesn't work.")
+    print("The gcd is greater then 1, so the euler algorithm doesn't work.")
     recieved_results = []
     repeting_num = -1
     for i in range(exponent):

@@ -16,6 +16,7 @@ or
 ```
 
 ## extended_euklid.py
+In order to use this script you have to execute `pip3 install prettytable` first
 ```python
 "Enter base num:" 221
 "Enter the mod base:" 39
